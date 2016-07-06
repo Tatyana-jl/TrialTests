@@ -12,6 +12,5 @@ model = sklearn.ensemble.GradientBoostingClassifier()
 model.fit(x_train, y_train)
 expected = y_test
 predicted = model.predict(x_test)
-print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
 print(model.score(x_test, y_test))
